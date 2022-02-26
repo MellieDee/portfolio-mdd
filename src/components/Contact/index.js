@@ -3,7 +3,7 @@ import { validateEmail } from '../../utils/helpers';
 
 
 
-function ContactForm() {
+function Contact() {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
 
   // useState Hook to handle error state
@@ -87,3 +87,5 @@ function ContactForm() {
   )
 
 }
+
+export default Contact

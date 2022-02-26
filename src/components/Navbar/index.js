@@ -8,29 +8,32 @@ function Navbar() {
 
   return (
     <header data-testid="header" className="flex-row px-1">
-      <img src={Logo} alt="M.D. Squared Logo" data-testid="logo" className="logo" href="/" />
-      <h1>
+      <a href="/">
+        <img src={Logo} alt="M.D. Squared Logo" data-testid="logo" className="logo" href="/" />
+      </a>
+      {/* <h1>
         <a data-testid="link" href="/">Mellie Dee Develops</a>
-      </h1>
+      </h1> */}
       <nav>
         <ul className="flex-row">
-          <li className="mx-2">
+
+          <li className="mx-2 my-2">
             <a data-testid="about" href="#about">
               About Me
             </a>
           </li>
-          <li className="mx-2">
+          <li className="mx-2 my-2">
             <a data-testid="featured" href="#featured">
               Featured Projects
             </a>
           </li>
-          <li className="mx-2">
+          <li className="mx-2 my-2">
             <a data-testid="contact" href="#contact">
               Contact Me
             </a>
           </li>
 
-          <li className="mx-2">
+          <li className="mx-2 my-2">
 
             <a href={Pdf} rel="noopener noreferrer" target="_blank">
               <button className="button" label="Resume">
