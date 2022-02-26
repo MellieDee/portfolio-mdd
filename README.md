@@ -10,6 +10,18 @@ https://pspdfkit.com/blog/2018/open-pdf-in-react/
 
 https://reactjs.org/docs/handling-events.html
 
+https://stackoverflow.com/questions/41561884/how-to-open-a-pdf-in-new-tab-in-reactjs
+
+https://stackoverflow.com/questions/61164908/open-pdf-in-react-with-correct-title
+
+https://www.google.com/search?q=how+put+gradient+over+a+pic+in+css&oq=how+put+gradient+over+a+pic+in+css&aqs=chrome..69i57.5873j0j7&sourceid=chrome&ie=UTF-8#kpvalbx=_M88ZYv2qD4qe0PEP976h8Ac14
+
+https://css-tricks.com/perfect-full-page-background-image/
+
+https://www.upbeatcode.com/react/how-to-write-text-on-image-in-react-js/
+
+https://www.geeksforgeeks.org/how-to-create-sticky-footer-in-reactjs/
+
 &nbsp;
 
 #### Getting Started with Create React App

@@ -1,5 +1,6 @@
 import React from 'react';
 import Pdf from '../../assets/dubberleyResume.PDF';
+import Logo from '../../assets/logo128.png';
 
 function Navbar() {
 
@@ -7,6 +8,7 @@ function Navbar() {
 
   return (
     <header data-testid="header" className="flex-row px-1">
+      <img src={Logo} alt="M.D. Squared Logo" data-testid="logo" className="logo" href="/" />
       <h1>
         <a data-testid="link" href="/">Mellie Dee Develops</a>
       </h1>
@@ -27,11 +29,6 @@ function Navbar() {
               Contact Me
             </a>
           </li>
-          {/* <li className="mx-2">
-            <a data-testid="resume" className="resume button" href="../public/dubberleyResume.pdf" target="_blank" rel="noopener noreferrer">
-              Resume
-            </a>
-          </li> */}
 
           <li className="mx-2">
 
@@ -41,10 +38,6 @@ function Navbar() {
               </button>
             </a>
           </li>
-          {/* 
-          <li className="mx-2">
-            <button type="submit" className="button" onClick={() => { window.open('../public/dubberleyResume.pdf') }}>Download!</button>
-          </li> */}
 
         </ul>
       </nav>
