@@ -1,3 +1,4 @@
+// Takes all Rxt Comp & mounts to DOM in el w/ID='root'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
