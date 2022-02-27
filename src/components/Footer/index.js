@@ -1,6 +1,6 @@
 import React from 'react';
-import iconLi from '../../assets/markLinkedIn-64.png';
-import iconGh from '../../assets/markGitHub-64.png'
+import iconLi from '../../assets/marks/markLinkedIn-64.png';
+import iconGh from '../../assets/marks/markGitHub-64.png'
 
 const Footer = () => (
   <footer className="footer px-3">

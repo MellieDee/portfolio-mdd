@@ -1,52 +1,66 @@
 import React, { useState } from 'react';
 // import Modal from '../Modal'
 
+
 const ProjectList = ({ category }) => {
 
-  const [isModalOpen, setIsModalOpen] = useState(false)
-  const [currentProject, setCurrentProject] = useState();
+  // const [isModalOpen, setIsModalOpen] = useState(false)
+  // const [currentProject, setCurrentProject] = useState();
 
   const [projects] = useState([
     {
       name: "Walk 'n Spot",
       category: 'featured',
+      imgName: '1-thumbHoriseon',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    },
-    {
-      name: 'deCrypto',
-      category: 'featured',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+        '1',
+      id: 1
     },
     {
       name: 'weatherDash',
       category: 'featured',
+      imgName: '2-thumbRunBuddy',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+        '2',
+      id: 2
     },
+    {
+      name: 'deCrypto',
+      category: 'featured',
+      imgName: '3-thumbDecrypto',
+      description:
+        '3',
+      id: 3
+    },
+
     {
       name: 'README Generator',
       category: 'featured',
+      imgName: '4-thumbPets',
       description:
-        "CLI app to generate a quality README.md which includes a screenshot of the user's app."
+        "3",
+      id: 4
     },
-    {
-      name: 'Regex for Date',
-      category: 'featured',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    },
-    {
-      name: 'Social API',
-      category: 'featured',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    }
+    // {
+    //   name: 'Regex for Date',
+    //   category: 'featured',
+    //   imgName: '4-thumbPets',
+    //   description:
+    //     '5',
+    //   id: 5
+    // },
+    // {
+    //   name: 'Social API',
+    //   category: 'featured',
+    //   imgName: '4-thumbPets',
+    //   description:
+    //     '6',
+    //   id: 6
+    // }
 
   ]);
 
-  const currentProjects = projects.filter((project) => project.category === category);
+  // const currentProjects = projects.filter((project) => project.category === category);
 
   // ------------- Modal State ------------------
   // const toggleModal = (image, i) => {
@@ -55,6 +69,23 @@ const ProjectList = ({ category }) => {
   //   // when toggleModal function executes, isModalOpen toggles from true to false
   //   setIsModalOpen(!isModalOpen)
   // }
+
+
+  return (
+    <div>
+      <div className="flex-row">
+
+        {projects.map((project) => (
+          <img
+            className="project-image"
+            src={require(`../../assets/thumbnails/${project.category}/${project.imgName}.jpg`)}
+            alt={project.name}
+            key={project.name}
+          />
+        ))}
+      </div>
+    </div>
+  )
 }
 
 // -------------  JSX to display images--------------

@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-const SideBar = () => {
+const TagLine = () => {
 
 
   return (
@@ -19,4 +19,4 @@ const SideBar = () => {
   );
 }
 
-export default SideBar
+export default TagLine

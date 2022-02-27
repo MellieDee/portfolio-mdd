@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from '../Hero'
-import SideBar from '../SideBar';
+import TagLine from '../TagLine';
 // import coverImage from '../../assets/cover/cover-image.jpg';
 
 
@@ -26,7 +26,7 @@ const WhatDo = (props) => {
           </p>
         </div>
       </section>
-      <SideBar></SideBar>
+      <TagLine />
     </>
   );
 }

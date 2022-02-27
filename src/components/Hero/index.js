@@ -1,5 +1,5 @@
 import React from 'react';
-import bricks from '../../assets/bricks.png';
+import bricks from '../../assets/images/bricks.png';
 import styles from "../../index.css";
 
 
