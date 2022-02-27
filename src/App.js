@@ -3,9 +3,9 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
-// import Portfolio from './components/Portfolio';
+import Portfolio from './components/Portfolio';
 import WhatDo from './components/WhatDo';
-import ProjectList from './components/ProjectList';
+// import ProjectList from './components/ProjectList';
 
 
 // import Document from './components/Document';
@@ -25,7 +25,7 @@ function App() {
       case `contact`:
         return <Contact />
       case `featured`:
-        return <ProjectList />
+        return <Portfolio />
       default:
         return <WhatDo />
 

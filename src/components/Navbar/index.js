@@ -5,16 +5,16 @@ import Logo from '../../assets/logos/logo128.png';
 function Navbar(props) {
 
   const updatePage = (e) => {
-    console.log(e.targets)
+    // console.log(e.targets)
     let page = e.target.name;
     props.setCurrentPage(page);
   }
 
   return (
-    <header data-testid="header" className="px-1">
+    <header data-testid="header" className="flex-row px-1">
 
-      <nav className="flex-row">
-
+      <nav className="container-nav flex-row">
+        {/* <nav> */}
         <a href="/" className="logo-container">
           <img src={Logo} alt="M.D. Squared Logo" data-testid="logo" className="logo ripple" href="/" />
         </a>

@@ -90,13 +90,13 @@ p {
   margin-top: 0;
 }
 
-a {
+/* a {
   color: var(--pink);
   text-decoration: none;
-}
+} */
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 header {
@@ -112,6 +112,7 @@ header {
 
 header a {
   color: var(--grey);
+  text-decoration: none;
 }
 
 /* button {
@@ -148,20 +149,6 @@ button:hover {
 button[disabled] {
   cursor: default;
   opacity: 0.8;
-}
-
-.logo {
-  padding: 1em;
-  display: block;
-  border-radius: 60%;
-  box-shadow: 2px 2px 6px var(--ltBlue) inset;
-  /* text-indent: -9999px; */
-  /* float: left; */
-}
-
-.logo-container {
-  height: 172px;
-  width: 172px;
 }
 
 /* Ripple Color Play */
@@ -206,6 +193,20 @@ input:focus {
   box-shadow: 0 0 0.25rem rgba(237, 55, 116, 0.5);
 }
 
+.logo {
+  padding: 1em;
+  display: block;
+  border-radius: 60%;
+  box-shadow: 2px 2px 6px var(--ltBlue) inset;
+  /* text-indent: -9999px; */
+  /* float: left; */
+}
+
+.logo-container {
+  height: 100px;
+  width: 100px;
+}
+
 ul {
   overflow-wrap: break-word;
 }
@@ -223,13 +224,14 @@ nav a:hover {
 }
 
 .nav-list {
-  height: 172px;
-  line-height: 172px;
+  height: 60px;
+  line-height: 60px;
 }
 
 nav li {
   cursor: pointer;
-  height: 6.4rem;
+  /* height: 6.4rem;*/
+  height: 4rem;
   display: block;
 }
 
@@ -240,6 +242,20 @@ textarea {
   padding: 5px;
 }
 
+.w3-card {
+  margin: 2em;
+  padding: 0.5em;
+  box-shadow: 3px 3px 5px var(--dkBlue);
+}
+
+.w3-card:hover {
+  opacity: 0.3;
+}
+
+/* .project-image {
+  display: inline-block;
+  width: 100%;
+} */
 /* .gradient-overlay {
   position: relative;
 }
@@ -264,15 +280,6 @@ textarea {
   line-height: 1.2;
 } */
 
-.dot {
-  height: 0.4em;
-  width: 0.4em;
-  background-color: var(--dkBlue);
-  border-radius: 50%;
-  display: inline-block;
-  margin: 5px;
-}
-
 /* .section-top {
   border-bottom: solid 2px var(--pink);
 } */
@@ -282,6 +289,13 @@ textarea {
 }
 
 /*  ------- UTILITY STYLES ------- */
+
+/* .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+} */
+
 .container {
   width: 85%;
   max-width: 1200px;
@@ -370,15 +384,15 @@ textarea {
   padding-bottom: var(--spacing-four);
 }
 
-.card {
+/* .card {
   width: 25%;
   text-align: center;
-}
+} */
 
 .img-thumbnail {
   width: auto;
-  height: 300px;
-  margin-bottom: 50px;
+  /* height: 300px;
+  margin-bottom: 50px; */
   cursor: pointer;
 }
 
@@ -406,6 +420,15 @@ textarea {
   font-size: 18px;
   font-weight: 300;
   margin-bottom: 25px;
+}
+
+.dot {
+  height: 0.4em;
+  width: 0.4em;
+  background-color: var(--dkBlue);
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
 }
 
 /* 
@@ -453,10 +476,91 @@ a {
   padding: 1.8em;
 }
 
+/* .card {
+  /* Add shadows to create the "card" effect
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+} */
+
+/* On mouse-over, add a deeper shadow */
+/* .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+} */
+
+/* ---------- MQ For Medium tablets ---------- */
+@media screen and (min-width: 575px) {
+  body {
+    font-size: 16px;
+  }
+
+  header {
+    justify-content: end;
+  }
+  .container-nav {
+    flex-wrap: wrap;
+  }
+  .logo-container {
+    flex-shrink: 1;
+    height: 100px;
+    width: 100px;
+  }
+  .nav-list {
+    height: 100px;
+    line-height: 100px;
+    flex-shrink: 2;
+  }
+
+  .list-item {
+    margin: 0 0 0 0.6em;
+  }
+}
+
+/* ---------- MQ For Medium tablets ---------- */
+@media screen and (min-width: 768px) {
+  header {
+    justify-content: space-evenly;
+  }
+
+  .logo-container {
+    display: inline;
+    height: 140px;
+    width: 140px;
+  }
+  .nav-list {
+    height: 140px;
+    line-height: 140px;
+  }
+
+  .list-item {
+    margin: 0 var(--spacing-two);
+  }
+}
+
+/* ----- MQ FOR LARGER TABLETS & LAPTOPS ----- */
+@media screen and (min-width: 900px) {
+  body {
+    font-size: 20px;
+  }
+
+  header {
+    justify-content: end;
+  }
+
+  .logo-container {
+    display: inline;
+    height: 160px;
+    width: 160px;
+  }
+  .nav-list {
+    height: 160px;
+    line-height: 160px;
+  }
+}
+
 /* ----- MQ FOR LARGER TABLETS & LAPTOPS ----- */
 @media screen and (min-width: 960px) {
   body {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .heroText {
@@ -464,6 +568,20 @@ a {
     color: whitesmoke;
     text-align: center;
     padding: 1em;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  .logo-container {
+    display: block;
+    height: 172px;
+    width: 172px;
+  }
+  .nav-list {
+    height: 172px;
+    line-height: 172px;
   }
 }
 
