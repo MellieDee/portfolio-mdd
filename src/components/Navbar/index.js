@@ -16,7 +16,7 @@ function Navbar(props) {
       <nav className="flex-row">
 
         <a href="/" className="logo-container">
-          <img src={Logo} alt="M.D. Squared Logo" data-testid="logo" className="logo" href="/" />
+          <img src={Logo} alt="M.D. Squared Logo" data-testid="logo" className="logo ripple" href="/" />
         </a>
         <ul className="flex-row nav-list" onClick={updatePage}>
 
@@ -39,7 +39,7 @@ function Navbar(props) {
           <li className="list-item mx-2">
 
             <a href={Pdf} rel="noopener noreferrer" target="_blank">
-              <button className="button" label="Resume">
+              <button className="button ripple" label="Resume">
                 Resume
               </button>
             </a>

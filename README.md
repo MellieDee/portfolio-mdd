@@ -22,6 +22,10 @@ https://www.upbeatcode.com/react/how-to-write-text-on-image-in-react-js/
 
 https://www.geeksforgeeks.org/how-to-create-sticky-footer-in-reactjs/
 
+https://samsmall.design/
+
+https://css-tricks.com/how-to-recreate-the-ripple-effect-of-material-design-buttons/
+
 &nbsp;
 
 #### Getting Started with Create React App

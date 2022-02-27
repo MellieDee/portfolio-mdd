@@ -7,7 +7,7 @@ const Footer = () => (
     <div className="cl-foot-wrapper">
       <div className="footer-div">
         <h5 className="footer-title">another MD<sup>2</sup>design</h5>
-        <p className="copyright">&copy; 2021 Melanie Dubberley & Mellie Dee Develops</p>
+        <p className="copyright">&copy; 2022 Melanie Dubberley & Mellie Dee Develops</p>
       </div>
       <ul>
         <li className="mx-auto">
