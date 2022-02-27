@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Hero from './components/Hero';
 import Navbar from './components/Navbar';
+import Portfolio from './components/Portfolio';
 import WhatDo from './components/WhatDo';
 
 
@@ -14,25 +14,34 @@ import WhatDo from './components/WhatDo';
 
 function App() {
 
-  const [contactSelected, setContactSelected] = useState(false);
+  const [currentPage, setCurrentPage] = useState(`WhatDo`);
+
+  const renderPage = () => {
+    switch (currentPage) {
+      case `WhatDo`:
+        return <WhatDo />
+      case `about`:
+        return <About />
+      case `contact`:
+        return <Contact />
+      case `portfolio`:
+        return <Portfolio />
+      default:
+        return <WhatDo />
+
+    }
+  }
 
   return (
     <div className='App'>
       <Navbar
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
       ></Navbar>
-      <Hero></Hero>
+
       <main>
 
-        {!contactSelected ? (
-          <>
-            <WhatDo></WhatDo>
-            <About></About>
-          </>
-        ) : (
-          <Contact></Contact>
-        )}
+        {renderPage()}
       </main>
       <Footer></Footer>
     </div>

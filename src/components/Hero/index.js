@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <article
       className={styles.article}
-      style={{ backgroundImage: `url(${bricks})` }}
+      style={{ backgroundImage: `url(${bricks}`, backgroundSize: `cover`, backgroundPosition: `center center`, backgroundRepeat: `no-repeat` }}
     >
       <h1 className="heroText">
         Full Stack Developer.<br />

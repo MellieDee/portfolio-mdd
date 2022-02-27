@@ -6,7 +6,7 @@ import React from 'react';
 const About = () => {
   return (
     <section className="my-5">
-      <h1 id="about">Who am I?</h1>
+      <h1 id="about">A little bit about me...</h1>
       {/* <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" /> */}
       <div className="my-2">
         <p>

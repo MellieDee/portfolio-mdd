@@ -1,7 +1,7 @@
 main {
   margin: 0 auto;
-  max-width: 90%;
-  padding: 50px 30px;
+  max-width: 100%;
+  /* padding: 50px 30px; */
 }
 :root {
   --dkBlue: #2a2fa8;
@@ -168,10 +168,18 @@ ul {
 li {
   list-style: none;
 }
-
+nav {
+  width: 100vw;
+  justify-content: space-between;
+}
 nav a:hover {
   text-decoration: none;
   color: var(--ltGreen);
+}
+
+.nav-list {
+  height: 172px;
+  line-height: 172px;
 }
 
 nav li {
@@ -190,10 +198,15 @@ textarea {
 .logo {
   padding: 1.1em;
   display: block;
+
   /* text-indent: -9999px; */
   /* float: left; */
 }
 
+.logo-container {
+  height: 172px;
+  width: 172px;
+}
 /* .gradient-overlay {
   position: relative;
 }
@@ -370,10 +383,10 @@ button {
   cursor: pointer;
   font-size: 1em;
   font-weight: 300;
-  margin-bottom: 30px;
-  padding: 10px 15px;
+  /* margin-bottom: 1.2em; */
+  padding: 0.4em 1.1em;
 }
-
+/* 
 a {
   border-radius: 5px;
   color: var(--ltGreen);
@@ -381,7 +394,7 @@ a {
   padding: 2px 4px;
   margin-left: -2px;
   margin-right: -2px;
-}
+} */
 
 .navActive {
   color: var(--ltGreen);
@@ -418,3 +431,13 @@ a {
     padding: 1em;
   }
 }
+
+/* 
+--------- CSS for split -------
+.top {
+  clip-path: polygon(0 0,100% 0,100% calc(100% - 50px),0 100%);
+}
+.bottom {
+  clip-path: polygon(0 50px,100% 0,100% 100%,0 100%);
+  margin-top: -40px;
+} */
