@@ -7,6 +7,7 @@ main {
   --dkBlue: #2a2fa8;
   --ltBlue: #abe5fa;
   --grey: #cfe3ea;
+  --ltGrey: #d8e8ed;
   --pink: #ed3773;
   --cranberry: #a4204f;
   --ltGreen: #c8d654;
@@ -150,15 +151,15 @@ form {
 input {
   font-size: 1rem;
   padding: 0.25rem;
-  border: 1px solid var(--dark);
+  border: 1px solid var(--dkGreen);
   outline: none;
   border-radius: 3px;
   transition: box-shadow 0.2s;
 }
 
 input:focus {
-  border: 1px solid var(--secondary);
-  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--pink);
+  box-shadow: 0 0 0.25rem rgba(237, 55, 116, 0.5);
 }
 
 ul {
@@ -222,14 +223,14 @@ textarea {
   opacity: 0.3%;
 } */
 
-.hero-cta {
+/* .hero-cta {
   width: 35%;
   text-align: right;
   margin: 3.5%;
   color: whitesmoke;
   font-size: 18px;
   line-height: 1.2;
-}
+} */
 
 .dot {
   height: 0.4em;
@@ -240,15 +241,15 @@ textarea {
   margin: 5px;
 }
 
-.section-top {
+/* .section-top {
   border-bottom: solid 2px var(--pink);
-}
+} */
 
 .footer-title {
   color: var(--dkBlue);
 }
 
-/*   ---- UTILITY STYLES ----- */
+/*  ------- UTILITY STYLES ------- */
 .container {
   width: 85%;
   max-width: 1200px;
@@ -418,7 +419,19 @@ a {
   padding: 1em;
 }
 
-/* ------- MQ FOR LARGER TABLETS & LAPTOPS ----- */
+.side-bar {
+  background-color: var(--ltGrey);
+  /* border-top: var(--ltGreen); */
+  box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.4);
+}
+
+.side-bar p {
+  margin: auto;
+  font-size: 2em;
+  padding: 1.8em;
+}
+
+/* ----- MQ FOR LARGER TABLETS & LAPTOPS ----- */
 @media screen and (min-width: 960px) {
   body {
     font-size: 20px;
