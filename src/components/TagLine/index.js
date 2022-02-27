@@ -7,7 +7,7 @@ const TagLine = () => {
 
   return (
     <>
-      <section className="my-5 px-3 side-bar">
+      <section className="my-5 px-3 tag-line">
 
         <div className="my-2">
           <p className='pb-4'>

@@ -61,8 +61,8 @@ function Contact() {
 
 
   return (
-    <section className="cl-contact-wrapper px-3">
-      <div className="contact-text">
+    <section className="cl-wrapper px-3">
+      <div className="page-text">
         <h2>How to Reach Me</h2>
         <p className="cta">Love to chat with you about next steps to bring your designs to life, about what silly thing your pet did today, or about your favorite restaurant. Feel free to reach out; I'm here!
         </p>

@@ -26,7 +26,6 @@ const WhatDo = (props) => {
           </p>
         </div>
       </section>
-      <TagLine />
     </>
   );
 }

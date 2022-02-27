@@ -195,21 +195,22 @@ input:focus {
   border: 1px solid var(--pink);
   box-shadow: 0 0 0.25rem rgba(237, 55, 116, 0.5);
 }
-.cl-contact-wrapper {
+.cl-wrapper {
   width: 80%;
 }
 
-.cl-contact-wrapper form email {
+.cl-wrapper form email {
   font-size: 0.8em;
 }
 
-.contact-text h2 {
-  margin-bottom: 1em;
+.page-text h2 {
+  margin: 1em 0;
+  color: var(--dkBlue);
 }
 
-.contact-text,
+.-text,
 .contact-addy,
-.cl-contact-wrapper form {
+.cl-wrapper form {
   padding: 1em;
   flex-basis: 30%;
   color: var(--dkBlue);
@@ -242,6 +243,15 @@ input:focus {
   height: 100px;
   width: 100px;
 }
+
+.social {
+  display: inline-flex;
+  /* width: 100px; */
+}
+/* 
+.mark {
+  padding: 0.3em;
+} */
 
 ul {
   overflow-wrap: break-word;
@@ -325,6 +335,10 @@ textarea {
   border-bottom: solid 2px var(--pink);
 } */
 
+.footer {
+  justify-content: space-between;
+}
+
 .footer-title {
   color: var(--dkBlue);
 }
@@ -347,6 +361,10 @@ textarea {
 .flex-row {
   display: flex;
   flex-wrap: wrap;
+}
+
+.center {
+  justify-content: center;
 }
 
 .space-between {
@@ -506,16 +524,17 @@ a {
   padding: 1em;
 }
 
-.side-bar {
+.tag-line {
   background-color: var(--ltGrey);
+  /* margin-top: 3rem; */
   /* border-top: var(--ltGreen); */
   box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.4);
 }
 
-.side-bar p {
+.tag-line p {
   margin: auto;
   font-size: 2em;
-  padding: 1.8em;
+  padding: 1.5em;
 }
 
 /* .card {

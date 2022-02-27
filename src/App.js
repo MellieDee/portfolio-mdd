@@ -4,6 +4,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Portfolio from './components/Portfolio';
+import TagLine from './components/TagLine';
 import WhatDo from './components/WhatDo';
 // import ProjectList from './components/ProjectList';
 
@@ -43,7 +44,8 @@ function App() {
 
         {renderPage()}
       </main>
-      <Footer></Footer>
+      <TagLine />
+      <Footer />
     </div>
   );
 }
