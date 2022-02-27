@@ -61,18 +61,31 @@ function Contact() {
 
 
   return (
-    <section>
-      <h1 data-testid="contactForm">Contact me</h1>
+    <section className="cl-contact-wrapper px-3">
+      <div className="contact-text">
+        <h2>How to Reach Me</h2>
+        <p className="cta">Love to chat with you about next steps to bring your designs to life, about what silly thing your pet did today, or about your favorite restaurant. Feel free to reach out; I'm here!
+        </p>
+      </div>
+
+      <div className="contact-addy">
+        <address>
+          Sacramento, Ca 95835<br />
+          916-596-0496<br />
+          <a href="mailto:ReachMe@MelanlieDubberley.com">MellieDeeDevelops@outlook.com</a>
+        </address>
+      </div>
+
       <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
+        <div className="form-row">
+          <label htmlFor="name">Your Name:</label>
           <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
         </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
+        <div className="form-row">
+          <label htmlFor="email">Your Email address:</label>
           <input type="email" defaultValue={email} onBlur={handleChange} name="email" />
         </div>
-        <div>
+        <div className="form-row">
           <label htmlFor="message">Message:</label>
           <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" />
         </div>
@@ -81,7 +94,9 @@ function Contact() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button data-testid="cfButton" type="submit">Submit</button>
+        <div className="form-row">
+          <button className="" data-testid="cfButton" type="submit">Send a Byte</button>
+        </div>
       </form>
     </section>
   )

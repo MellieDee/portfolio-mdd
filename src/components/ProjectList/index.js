@@ -70,15 +70,21 @@ const ProjectList = () => {
     <div>
       {projects.map((project, i) => (
         <div key={project.id} className="w3-card w3-hover-shadow my-5">
-          <a href={project.href} rel="noopener noreferrer" target="_blank">
-            <img
-              className="project-image img-thumbnail"
-              src={require(`../../assets/thumbnails/featured/${project.imgName}.jpg`)}
-              alt={project.name}
-            />
-          </a>
+          {/* <a href={project.href} rel="noopener noreferrer" target="_blank"> */}
+          <img
+            className="project-image img-thumbnail"
+            src={require(`../../assets/thumbnails/featured/${project.imgName}.jpg`)}
+            alt={project.name}
+          />
+          <h3 className="project-title">{project.name}
+            <a href={project.href} rel="noopener noreferrer" target="_blank">
+              Deployed
+            </a></h3>
+          <p>{project.description}</p>
+
         </div>
-      ))}
+      ))
+      }
     </div >
   )
 }
