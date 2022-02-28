@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from '../Hero'
-import TagLine from '../TagLine';
+
 // import coverImage from '../../assets/cover/cover-image.jpg';
 
 

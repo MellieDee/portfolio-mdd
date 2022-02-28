@@ -4,33 +4,42 @@ import Logo from '../../assets/logos/logo128.png';
 
 function Navbar(props) {
 
+
   const updatePage = (e) => {
     // console.log(e.targets)
     let page = e.target.name;
     props.setCurrentPage(page);
   }
 
+  // const navActive = (e) => {
+  //   let nav = e.target.name;
+  //   props.setNavActive(nav)
+  // }
+
+
   return (
     <header data-testid="header" className="flex-row px-1">
 
       <nav className="container-nav flex-row">
+
         {/* <nav> */}
         <a href="/" className="logo-container">
           <img src={Logo} alt="M.D. Squared Logo" data-testid="logo" className="logo ripple" href="/" />
         </a>
         <ul className="flex-row nav-list" onClick={updatePage}>
 
-          <li className="list-item mx-2">
-            <a data-testid="about" name="about" href="#about">
+          <li className="list - item mx-2" id="about">
+            <a data-testid="about" name="about" href="#about" >
               About Me
             </a>
+
           </li>
-          <li className="list-item mx-2">
+          <li className="list-item mx-2" id="featured">
             <a data-testid="featured" name="featured" href="#featured">
               Featured Projects
             </a>
           </li>
-          <li className="list-item mx-2">
+          <li className="list-item mx-2" id="contact">
             <a data-testid="contact" name="contact" href="#contact">
               Contact Me
             </a>

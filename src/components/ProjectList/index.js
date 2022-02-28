@@ -41,15 +41,15 @@ const ProjectList = () => {
       description: "3",
       id: 4
     },
-    // {
-    //   name: 'Regex for Date',
-    //   category: 'featured',
-    //   imgName: '4-thumbPets',
-    //   href: 'https://lssdavies.github.io/deCrypto/',
-    //   description:
-    //     '5',
-    //   id: 5
-    // },
+    {
+      name: 'Regex for Date',
+      category: 'featured',
+      imgName: '5-thumbRegex',
+      href: 'https://gist.github.com/MellieDee/28442f71ed65e6caf6fee6280ccff8f2',
+      description:
+        'Intro to a few common Regex concepts by examining the syntax to search for ISO 8601 YYYY/MM/DD dates',
+      id: 5
+    }
     // {
     //   name: 'Social API',
     //   category: 'featured',
@@ -67,23 +67,55 @@ const ProjectList = () => {
 
   return (
     // <div className="flex-row">
-    <div>
-      {projects.map((project, i) => (
-        <div key={project.id} className="w3-card w3-hover-shadow my-5">
-          {/* <a href={project.href} rel="noopener noreferrer" target="_blank"> */}
-          <img
-            className="project-image img-thumbnail"
-            src={require(`../../assets/thumbnails/featured/${project.imgName}.jpg`)}
-            alt={project.name}
-          />
-          <h3 className="project-title">{project.name}
-            <a href={project.href} rel="noopener noreferrer" target="_blank">
-              Deployed
-            </a></h3>
-          <p>{project.description}</p>
+    // <div className="container">
+    //   {projects.map((project, i) => (
+    //     <div key={project.id} className="w3-card w3-hover-shadow my-5">
+    //       {/* <a href={project.href} rel="noopener noreferrer" target="_blank"> */}
+    //       <img
+    //         className="project-item project-image img-thumbnail flex-basis-50 w-50"
+    //         src={require(`../../assets/thumbnails/featured/${project.imgName}.jpg`)}
+    //         alt={project.name}
+    //       />
+    //       <div className="project-item flex-basis-50 w-50">
+    //         <h3 className="project-title">{project.name}
+    //           <a href={project.href} rel="noopener noreferrer" target="_blank">
+    //             Deployed
+    //           </a></h3>
+    //         <p>{project.description}</p>
+    //       </div>
+    //     </div>
+    //   ))
+    //   }
+    // </div >
 
-        </div>
-      ))
+
+    <div className="card-container">
+      {
+        projects.map((project, i) => (
+          <div key={project.id} className="card-body">
+
+            {/* <a href={project.href} rel="noopener noreferrer" target="_blank"> */}
+
+            <div className="card-header">
+              <a href={project.href} rel="noopener noreferrer" target="_blank">
+                <h3 className="project-title">{project.name} </h3>
+              </a>
+            </div>
+
+            <div className="card-image">
+              <a href={project.href} rel="noopener noreferrer" target="_blank">
+                <img
+                  className="img-thumbnail"
+                  src={require(`../../assets/thumbnails/featured/${project.imgName}.jpg`)}
+                  alt={project.name}
+                />
+              </a>
+
+              <p>{project.description}</p>
+            </div>
+
+          </div>
+        ))
       }
     </div >
   )

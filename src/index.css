@@ -13,8 +13,6 @@ main {
   --ltGreen: #c8d654;
   --medGreen: #7ab228;
   --dkGreen: #2f842b;
-  --brown: #604434;
-  --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-twoFive: calc(2.5rem);
@@ -166,9 +164,18 @@ button[disabled] {
   transition: background 0s;
 }
 /* ----------- Button Styles End ----------- */
-
+/* 
 img {
   max-width: 100%;
+} */
+
+.about {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.profile-img {
+  margin: 1em 0 1em 0;
 }
 
 span[role="img"] {
@@ -196,7 +203,8 @@ input:focus {
   box-shadow: 0 0 0.25rem rgba(237, 55, 116, 0.5);
 }
 .cl-wrapper {
-  width: 80%;
+  width: 100%;
+  /* margin: 3em; */
 }
 
 .cl-wrapper form email {
@@ -208,7 +216,7 @@ input:focus {
   color: var(--dkBlue);
 }
 
-.-text,
+.page-text,
 .contact-addy,
 .cl-wrapper form {
   padding: 1em;
@@ -219,6 +227,12 @@ input:focus {
 .contact-addy a {
   color: var(--dkGreen);
   font-weight: 600;
+}
+
+.error-text {
+  color: var(--cranberry);
+  font-weight: 500;
+  font-size: 1.3em;
 }
 
 .form-row {
@@ -292,17 +306,23 @@ textarea {
   border: 3px solid #cccccc;
   padding: 5px;
 }
-
+/* 
 .w3-card {
   margin: 2em;
   padding: 0.5em;
+  flex-grow: 1;
+  min-width: 12.5%;
+  max-width: none;
   box-shadow: 3px 3px 5px var(--dkBlue);
-}
+} */
 
 /* .w3-card:hover {
   opacity: 0.3;
 } */
 
+/* .project-title {
+  font-size: 0.8em;
+} */
 /* .project-image {
   display: inline-block;
   width: 100%;
@@ -353,9 +373,18 @@ textarea {
 
 .container {
   width: 85%;
-  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1em 1em;
+  max-width: 100vw;
   margin-left: auto;
   margin-right: auto;
+}
+.project-item {
+  flex-grow: 1;
 }
 
 .flex-row {
@@ -443,17 +472,57 @@ textarea {
   padding-bottom: var(--spacing-four);
 }
 
-/* .card {
-  width: 25%;
+.flex-basis-30 {
+  flex-basis: 30%;
+}
+
+.flex-basis-50 {
+  flex-basis: 50%;
+}
+
+.flex-basis-70 {
+  flex-basis: 70%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+/* ------------ Card Styles Start ------------- */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-body {
+  width: 50%;
+
+  border: solid 1px var(--ltGreen);
+  box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.4);
+}
+
+.card-header {
+  cursor: pointer;
+  height: 10%;
   text-align: center;
+}
+
+.card-image {
+  height: 70%;
+}
+
+/* .card {
+  padding: 2px 1em;
 } */
 
 .img-thumbnail {
-  width: auto;
+  /* flex-shrink: 0; */
+  width: 100%;
   /* height: 300px;
   margin-bottom: 50px; */
   cursor: pointer;
 }
+
+/* ------------ Card Styles End ------------- */
 
 .modalBackdrop {
   background: rgba(0, 0, 0, 0.65);
@@ -500,7 +569,7 @@ a {
   margin-right: -2px;
 } */
 
-.navActive {
+.active {
   color: var(--ltGreen);
   border: solid var(--ltGreen);
   font-weight: bold;
@@ -574,6 +643,19 @@ a {
   .list-item {
     margin: 0 0 0 0.6em;
   }
+
+  .w3-card {
+    margin: 2em;
+    padding: 0.5em;
+    flex-grow: 1;
+    max-width: 25%;
+    min-width: none;
+    box-shadow: 3px 3px 5px var(--dkBlue);
+  }
+
+  /* .project-title {
+    font-size: 1.1em;
+  } */
 }
 
 /* ---------- MQ For Medium tablets ---------- */
