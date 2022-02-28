@@ -1,4 +1,128 @@
-# Mellie Dee Portfolio
+# **Mellie Dee Portfolio(**)
+
+&nbsp;
+<img src="https://img.shields.io/badge/license-MIT-blue.svg">
+
+&nbsp;
+
+## **Project Description**
+
+Portfolio showcasing projects and tech I have been playing with.
+
+&nbsp;
+
+## Table of Contents
+
+---
+
+- [URL](#url)
+- [Screenshot](#screenshot)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Resources](#resources)
+- [Questions](#questions)
+- [License](#license)
+
+&nbsp;
+
+## **URL**
+
+---
+
+See my work [here](https://youtu.be/jcwn0kXOXvI)
+
+&nbsp;
+
+## **Screenshot**
+
+---
+
+<img src="/utils/assets/images/ScreenShot1.png" width=" 375" height="300" alt="Get all users route in Insomnia.">
+
+&nbsp;
+
+### **Contributing**
+
+---
+
+Not accepting contributors.
+
+&nbsp;
+
+### **Tests**
+
+---
+
+No tests at this time.
+
+&nbsp;
+
+### **Resources**
+
+---
+
+#### I Used or Was Inspired By
+
+https://www.codegrepper.com/code-examples/whatever/mongoose+validate+match+regex
+
+https://day.js.org/docs/en/plugin/localized-format
+
+https://docs.mongodb.com/manual/tutorial/query-array-of-documents/
+
+https://docs.mongodb.com/v4.2/tutorial/model-referenced-one-to-many-relationships-between-documents/
+
+https://www.freecodecamp.org/news/introduction-to-mongoose-for-mongodb-d2a7aa593c57/
+
+https://intellipaat.com/community/34270/mongodb-difference-between-push-addtoset#:~:text=The%20difference%20between%20%24push%2F%24,whether%20it%20exists%20or%20not
+
+https://kb.objectrocket.com/mongo-db/the-mongoose-in-operator-1015
+
+https://mongoosejs.com/docs/populate.html#populate-virtuals
+
+https://www.regular-expressions.info/email.html
+
+https://regex101.com/r/Ts5PkE/1
+
+https://stackoverflow.com/questions/18553946/remove-sub-document-from-mongo-with-mongoose
+
+https://stackoverflow.com/questions/61102675/how-to-do-mongoose-model-self-reference-on-typescript
+
+&nbsp;
+
+### **Questions**
+
+---
+
+Reach me directly at melliedeedevelops@outlook.com - love to chat!</br>  
+Or checkout out my GitHub profile: [github.com/MellieDee](https://github.com/MellieDee)
+
+&nbsp;
+
+### **License**
+
+---
+
+Copyright (c) Melanie Dubberley.
+
+Licensed under the [MIT](https://choosealicense.com/licenses) license.
+
+&nbsp;
+
+##### Return to:
+
+---
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [URL](#url)
+- [Screenshot](#screenshot)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Resources](#resources)
+- [Questions](#questions)
+- [License](#license)
+
+&nbsp;
 
 ##
 
