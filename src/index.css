@@ -245,12 +245,12 @@ input:focus {
 /*  ------------- Form Styles End ---------------- */
 
 .logo {
-  padding: 1em;
-  display: block;
+  padding: 0.5em;
   border-radius: 60%;
-  box-shadow: 2px 2px 6px var(--ltBlue) inset;
-  /* text-indent: -9999px; */
-  /* float: left; */
+  box-shadow: 2px 2px 4px var(--ltBlue) inset;
+  width: 100px;
+  height: 100px;
+  display: flex;
 }
 
 .logo-container {
@@ -260,12 +260,7 @@ input:focus {
 
 .social {
   display: inline-flex;
-  /* width: 100px; */
 }
-/* 
-.mark {
-  padding: 0.3em;
-} */
 
 ul {
   overflow-wrap: break-word;
@@ -288,10 +283,11 @@ nav a:hover {
   color: var(--ltGreen);
 }
 
-.nav-list {
-  height: 60px;
-  line-height: 60px;
-}
+/* .nav-list {
+  height: 80px;
+  line-height: 80px;
+  display: inline;
+} */
 
 nav li {
   cursor: pointer;
@@ -545,7 +541,13 @@ textarea {
   .container-nav {
     flex-wrap: wrap;
   }
+
+  .logo {
+    padding: 0.5em;
+    display: block;
+  }
   .logo-container {
+    padding-top: 1.5em;
     flex-shrink: 1;
     height: 100px;
     width: 100px;
