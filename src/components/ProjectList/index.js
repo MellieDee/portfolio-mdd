@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import iconGh from '../../assets/marks/markGitHub-64.png';
 // import Modal from '../Modal'
 
 
@@ -12,16 +13,19 @@ const ProjectList = () => {
     {
       name: "Walk 'n Spot",
       category: 'featured',
-      imgName: '1-thumbHoriseon',
+      imgName: '1-thumbWalkNSpot',
       href: 'https://walk-n-spot.herokuapp.com',
-      description: '1',
+      gitHub: 'https://github.com/MellieDee/Walk-n-Spot',
+      description: "To develop an interactive app for hikers to find animals. A way to search trails in your city for animals you want to see, and for those you don't!",
       id: 1
     },
     {
       name: 'weatherDash',
       category: 'featured',
-      imgName: '2-thumbRunBuddy',
-      description: '2',
+      imgName: '2-thumbWeatherDash',
+      href: 'https://melliedee.github.io/weatherDash/',
+      gitHub: 'https://github.com/MellieDee/weatherDash',
+      description: 'App to find weather in a searched city featuring dynamically updated HTML & CSS & API calls.',
       id: 2
     },
     {
@@ -29,16 +33,18 @@ const ProjectList = () => {
       category: 'featured',
       imgName: '3-thumbDecrypto',
       href: 'https://lssdavies.github.io/deCrypto/',
-      description: '3',
+      gitHub: 'https://github.com/MellieDee/deCrypto',
+      description: 'To develop a responsive website for people new to cryptocurrecy. A source to learn basic details and calculate buying power for a given dollar amount.',
       id: 3
     },
 
     {
       name: 'README Generator',
       category: 'featured',
-      imgName: '4-thumbPets',
-      href: 'https://lssdavies.github.io/deCrypto/',
-      description: "3",
+      imgName: '4-thumbReadMe',
+      href: 'https://github.com/MellieDee/readMe-generator',
+      gitHub: 'https://github.com/MellieDee/readMe-generator',
+      description: "CLI app to generate a quality README.md which includes a screenshot of the user's app. Not Deployed - checkout the repo!",
       id: 4
     },
     {
@@ -46,78 +52,98 @@ const ProjectList = () => {
       category: 'featured',
       imgName: '5-thumbRegex',
       href: 'https://gist.github.com/MellieDee/28442f71ed65e6caf6fee6280ccff8f2',
-      description:
-        'Intro to a few common Regex concepts by examining the syntax to search for ISO 8601 YYYY/MM/DD dates',
+      gitHub: 'https://gist.github.com/MellieDee/28442f71ed65e6caf6fee6280ccff8f2',
+      description: 'Intro to a few common Regex concepts by examining the syntax to search for ISO 8601 YYYY/MM/DD dates. Not Deployed - checkout the repo!',
       id: 5
+    },
+    {
+      name: 'Social API',
+      category: 'featured',
+      imgName: '6-thumbSocial',
+      href: 'https://www.youtube.com/watch?v=jcwn0kXOXvI',
+      gitHub: 'https://github.com/MellieDee/social-api',
+      description: 'Backend for a simple social app using MongoDB, Mongoose, Express, and Day.js. Not Deployed - checkout the walk-through.',
+      id: 6
     }
-    // {
-    //   name: 'Social API',
-    //   category: 'featured',
-    //   imgName: '4-thumbPets',
-    //   href: 'https://lssdavies.github.io/deCrypto/',
-    //   description:
-    //     '6',
-    //   id: 6
-    // }
-
   ]);
 
   // --- hard code category until more projects to showcase ----
   //const currentProjects = projects.filter((project) => project.category === 'featured');
 
   return (
-    // <div className="flex-row">
-    // <div className="container">
-    //   {projects.map((project, i) => (
-    //     <div key={project.id} className="w3-card w3-hover-shadow my-5">
-    //       {/* <a href={project.href} rel="noopener noreferrer" target="_blank"> */}
-    //       <img
-    //         className="project-item project-image img-thumbnail flex-basis-50 w-50"
-    //         src={require(`../../assets/thumbnails/featured/${project.imgName}.jpg`)}
-    //         alt={project.name}
-    //       />
-    //       <div className="project-item flex-basis-50 w-50">
-    //         <h3 className="project-title">{project.name}
-    //           <a href={project.href} rel="noopener noreferrer" target="_blank">
-    //             Deployed
-    //           </a></h3>
-    //         <p>{project.description}</p>
-    //       </div>
-    //     </div>
-    //   ))
-    //   }
-    // </div >
 
+    <div className="container flex-row">
+      {projects.map((project, i) => (
+        <div key={project.id} className=" card-container">
 
-    <div className="card-container">
-      {
-        projects.map((project, i) => (
-          <div key={project.id} className="card-body">
+          <div className="card-body">
+            {/* ---- card pic ----- */}
+            <a href="https://walk-n-spot.herokuapp.com" rel="noopener noreferrer" target="_blank">
+              <img
+                className="project-item project-img"
+                src={require(`../../assets/thumbnails/featured/${project.imgName}.jpg`)}
+                alt={project.name}
+              />
+            </a>
 
-            {/* <a href={project.href} rel="noopener noreferrer" target="_blank"> */}
+            {/* -------- card text ------ */}
+            <div className="card-text flex-row">
 
-            <div className="card-header">
-              <a href={project.href} rel="noopener noreferrer" target="_blank">
-                <h3 className="project-title">{project.name} </h3>
-              </a>
-            </div>
-
-            <div className="card-image">
-              <a href={project.href} rel="noopener noreferrer" target="_blank">
-                <img
-                  className="img-thumbnail"
-                  src={require(`../../assets/thumbnails/featured/${project.imgName}.jpg`)}
-                  alt={project.name}
-                />
+              <a href={project.gitHub} rel="noopener noreferrer" target="_blank" className="project-git">
+                <img src={iconGh} alt="GitHub icon" />
               </a>
 
-              <p>{project.description}</p>
+              <div className="project-item mx-2 my-2">
+                <h3><a href={project.href} rel="noopener noreferrer" target="_blank" alt={project.name} className="project-title">{project.name}</a></h3>
+
+                <p className="project-desc">{project.description}</p>
+              </div>
+
             </div>
 
           </div>
-        ))
+          {/* ---card body ends -- */}
+        </div>
+      ))
       }
     </div >
+
+
+
+    // <div className="card-container">
+    //   {
+    //     projects.map((project, i) => (
+    //       <>
+    //         <div key={project.id} className="card-body">
+
+    //           {/* <a href={project.href} rel="noopener noreferrer" target="_blank"> */}
+
+    //           <div className="card-header">
+    //             <a href={project.href} rel="noopener noreferrer" target="_blank">
+    //               <h3 className="project-title">{project.name} </h3>
+    //             </a>
+    //           </div>
+
+    //           {/* <div className="card-image">
+    //           <a href={project.href} rel="noopener noreferrer" target="_blank">
+    //             <img
+    //               className="img-thumbnail"
+    //               src={require(`../../assets/thumbnails/featured/${project.imgName}.jpg`)}
+    //               alt={project.name}
+    //             />
+    //           </a> */}
+
+    //           <div className="card-image"
+    //             style={{ backgroundImage: `{require(../../ assets/thumbnails/featured/${project.imgName}.jpg`, backgroundSize: `cover`, backgroundPosition: `center center`, backgroundRepeat: `no-repeat` }}>
+    //           </div>
+
+    //           <p>{project.description}</p>
+    //         </div>
+
+    //       </>
+    //     ))
+    //   }
+    // </div >
   )
 }
 

@@ -11,7 +11,7 @@ main {
   --pink: #ed3773;
   --cranberry: #a4204f;
   --ltGreen: #c8d654;
-  --medGreen: #7ab228;
+  --hovGreen: #dce3a3;
   --dkGreen: #2f842b;
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -306,54 +306,6 @@ textarea {
   border: 3px solid #cccccc;
   padding: 5px;
 }
-/* 
-.w3-card {
-  margin: 2em;
-  padding: 0.5em;
-  flex-grow: 1;
-  min-width: 12.5%;
-  max-width: none;
-  box-shadow: 3px 3px 5px var(--dkBlue);
-} */
-
-/* .w3-card:hover {
-  opacity: 0.3;
-} */
-
-/* .project-title {
-  font-size: 0.8em;
-} */
-/* .project-image {
-  display: inline-block;
-  width: 100%;
-} */
-/* .gradient-overlay {
-  position: relative;
-}
-
-&::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to top right, blacb, (var(--brown)));
-  opacity: 0.3%;
-} */
-
-/* .hero-cta {
-  width: 35%;
-  text-align: right;
-  margin: 3.5%;
-  color: whitesmoke;
-  font-size: 18px;
-  line-height: 1.2;
-} */
-
-/* .section-top {
-  border-bottom: solid 2px var(--pink);
-} */
 
 .footer {
   justify-content: space-between;
@@ -364,29 +316,6 @@ textarea {
 }
 
 /*  ------- UTILITY STYLES ------- */
-
-/* .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1em;
-} */
-
-.container {
-  width: 85%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  gap: 1em 1em;
-  max-width: 100vw;
-  margin-left: auto;
-  margin-right: auto;
-}
-.project-item {
-  flex-grow: 1;
-}
-
 .flex-row {
   display: flex;
   flex-wrap: wrap;
@@ -489,85 +418,83 @@ textarea {
 }
 
 /* ------------ Card Styles Start ------------- */
+.container {
+  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .card-container {
-  display: flex;
+  display: inline-block;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;
+  flex-grow: 1;
+  max-width: 1000px;
+  max-height: 50vh;
+  margin-bottom: 3em;
 }
 .card-body {
-  width: 50%;
-
-  border: solid 1px var(--ltGreen);
+  float: left;
+  width: 100%;
+  max-width: 300px;
   box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.4);
 }
+.card-body:hover {
+  box-shadow: 0 8px 16px 0 rgba(47, 132, 43, 0.4) inset;
+  background-color: var(--hovGreen);
+}
 
-.card-header {
+.project-item {
+  flex-grow: 1;
+  justify-content: center;
+  max-width: 100%;
+  color: var(--dkBlue);
   cursor: pointer;
-  height: 10%;
-  text-align: center;
 }
 
-.card-image {
-  height: 70%;
+.project-img:hover {
+  opacity: 0.3;
 }
 
-/* .card {
-  padding: 2px 1em;
-} */
+.project-item a:hover {
+  font-size: 1.3em;
+  color: var(--dkGreen);
+}
 
-.img-thumbnail {
-  /* flex-shrink: 0; */
+.project-title {
+  font-size: 1.2em;
+}
+
+.project-title:hover {
+  font-size: 1.3em;
+  color: var(--dkGreen);
+  padding: 0.3em;
+  border: solid 2px var(--dkGreen);
+  border-radius: 10px;
+}
+
+.project-git:hover {
+  border: solid 2px var(--dkGreen);
+  border-radius: 50%;
+}
+
+/* .project-desc {
   width: 100%;
-  /* height: 300px;
-  margin-bottom: 50px; */
-  cursor: pointer;
-}
+  display: inline;
+  flex-grow: 0;
+} */
 
 /* ------------ Card Styles End ------------- */
 
-.modalBackdrop {
-  background: rgba(0, 0, 0, 0.65);
-  bottom: 0;
-  left: 0;
-  overflow: auto;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 1;
-}
-
-.modalContainer {
-  background: var(--darker);
-  border-radius: 5px;
-  max-width: 100%;
-  margin: 50px auto;
-  padding: 15px;
-  width: 960px;
-}
-
-.modalTitle {
-  font-size: 18px;
-  font-weight: 300;
-  margin-bottom: 25px;
-}
-
 .dot {
-  height: 0.4em;
-  width: 0.4em;
+  height: 0.5em;
+  width: 0.5em;
   background-color: var(--dkBlue);
   border-radius: 50%;
   display: inline-block;
   margin: 5px;
 }
-
-/* 
-a {
-  border-radius: 5px;
-  color: var(--ltGreen);
-  font-weight: 300;
-  padding: 2px 4px;
-  margin-left: -2px;
-  margin-right: -2px;
-} */
 
 .active {
   color: var(--ltGreen);
@@ -606,17 +533,6 @@ a {
   padding: 1.5em;
 }
 
-/* .card {
-  /* Add shadows to create the "card" effect
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-} */
-
-/* On mouse-over, add a deeper shadow */
-/* .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-} */
-
 /* ---------- MQ For Medium tablets ---------- */
 @media screen and (min-width: 575px) {
   body {
@@ -644,26 +560,20 @@ a {
     margin: 0 0 0 0.6em;
   }
 
-  .w3-card {
-    margin: 2em;
-    padding: 0.5em;
-    flex-grow: 1;
-    max-width: 25%;
-    min-width: none;
-    box-shadow: 3px 3px 5px var(--dkBlue);
+  .project-title:hover {
+    font-size: 1.3em;
+    color: var(--dkGreen);
   }
-
-  /* .project-title {
-    font-size: 1.1em;
-  } */
 }
 
 /* ---------- MQ For Medium tablets ---------- */
 @media screen and (min-width: 768px) {
+  body {
+    font-size: 22px;
+  }
   header {
     justify-content: space-evenly;
   }
-
   .logo-container {
     display: inline;
     height: 140px;
@@ -682,7 +592,7 @@ a {
 /* ----- MQ FOR LARGER TABLETS & LAPTOPS ----- */
 @media screen and (min-width: 900px) {
   body {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   header {
@@ -697,6 +607,12 @@ a {
   .nav-list {
     height: 160px;
     line-height: 160px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -726,7 +642,44 @@ a {
     height: 172px;
     line-height: 172px;
   }
+  .card-body {
+    width: 90%;
+  }
+
+  .project-desc {
+    line-height: normal;
+    font: 0.5em;
+  }
 }
+
+/* ----------- Modal for Future  Starts ----------- */
+/* .modalBackdrop {
+  background: rgba(0, 0, 0, 0.65);
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.modalContainer {
+  background: var(--darker);
+  border-radius: 5px;
+  max-width: 100%;
+  margin: 50px auto;
+  padding: 15px;
+  width: 960px;
+}
+
+.modalTitle {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 25px; 
+}*/
+
+/* ----------- Modal for Future Endss ----------- */
 
 /* 
 --------- CSS for split -------
