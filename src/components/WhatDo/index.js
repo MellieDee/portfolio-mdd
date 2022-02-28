@@ -13,8 +13,8 @@ const WhatDo = (props) => {
     <>
       <Hero></Hero>
       <section className="my-5 px-3 section-top">
-        <h3 className="section-title">MDD for P<sup>3</sup></h3>
-        <h4>Planet<span className="dot"></span>People<span className="dot"></span>Pets
+        <h3 className="section-title what-do">MD<sup>2</sup> for P<sup>3</sup></h3>
+        <h4>Mellie<span className="dot"></span>Dee<span className="dot"></span>Develops   <span style={{ color: "blue" }}> for </span>   Planet<span className="dot"></span>People<span className="dot"></span>Pets
         </h4>
         <div className="my-2">
           <p className='pb-4'>

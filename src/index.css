@@ -173,6 +173,10 @@ span[role="img"] {
   cursor: default;
 }
 
+.what-do {
+  margin-bottom: 3em;
+}
+
 /*  ------------- Form Styles Start ---------------- */
 form {
   width: 50%;
@@ -478,12 +482,12 @@ textarea {
 /* ------------ Card Styles End ------------- */
 
 .dot {
-  height: 0.5em;
-  width: 0.5em;
+  height: 0.3em;
+  width: 0.3em;
   background-color: var(--dkBlue);
   border-radius: 50%;
   display: inline-block;
-  margin: 5px;
+  margin: 2px;
 }
 
 .active {

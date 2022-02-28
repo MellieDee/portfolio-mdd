@@ -16,7 +16,7 @@ const Footer = () => {
 
         <ul className="social center flex-row nav-list">
           <li className="mx-2 mark">
-            <a href="/">
+            <a href="https://melliedee.github.io/portfolio-mdd/">
               <img src={iconMdd} alt="MDD logo" />
             </a>
 
