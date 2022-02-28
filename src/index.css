@@ -421,16 +421,20 @@ textarea {
 }
 
 .card-container {
-  display: inline-block;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 0;
+  /* flex: 1 1; */
+  justify-content: space-around;
+  gap: 0.5em;
   flex-grow: 1;
   max-width: 1000px;
-  max-height: 50vh;
-  margin-bottom: 3em;
+  height: 1fr;
+  margin-bottom: 8em;
+  /* padding-top: 2em; */
 }
+
 .card-body {
+  /* flex: 1 1; */
   float: left;
   width: 100%;
   max-width: 300px;
@@ -442,7 +446,7 @@ textarea {
 }
 
 .project-item {
-  flex-grow: 1;
+  /* flex-grow: 1; */
   justify-content: center;
   max-width: 100%;
   color: var(--dkBlue);
@@ -454,18 +458,17 @@ textarea {
 }
 
 .project-item a:hover {
-  font-size: 1.3em;
+  font-size: 1.1em;
   color: var(--dkGreen);
 }
 
 .project-title {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .project-title:hover {
-  font-size: 1.3em;
   color: var(--dkGreen);
-  padding: 0.3em;
+  padding: 0.1em;
   border: solid 2px var(--dkGreen);
   border-radius: 10px;
 }
@@ -475,11 +478,11 @@ textarea {
   border-radius: 50%;
 }
 
-/* .project-desc {
+.project-desc {
   width: 100%;
-  display: inline;
+  font-size: 0.8em;
   flex-grow: 0;
-} */
+}
 
 /* ------------ Card Styles End ------------- */
 
@@ -615,6 +618,7 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 1em;
   }
 }
 

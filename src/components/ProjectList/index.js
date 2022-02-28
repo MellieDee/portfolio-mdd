@@ -76,7 +76,7 @@ const ProjectList = () => {
       {projects.map((project, i) => (
         <div key={project.id} className=" card-container">
 
-          <div className="card-body">
+          <article className="card-body">
             {/* ---- card pic ----- */}
             <a href="https://walk-n-spot.herokuapp.com" rel="noopener noreferrer" target="_blank">
               <img
@@ -101,7 +101,7 @@ const ProjectList = () => {
 
             </div>
 
-          </div>
+          </article>
           {/* ---card body ends -- */}
         </div>
       ))
