@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-mdd/static/css/main.913f694f.css",
-    "main.js": "/portfolio-mdd/static/js/main.84c5fe29.js",
+    "main.css": "/portfolio-mdd/static/css/main.7b38bc2d.css",
+    "main.js": "/portfolio-mdd/static/js/main.2c6cf31f.js",
     "static/js/787.349ee750.chunk.js": "/portfolio-mdd/static/js/787.349ee750.chunk.js",
     "static/media/bricks.png": "/portfolio-mdd/static/media/bricks.783d37ca15dbc9329841.png",
     "static/media/MddProfileNb-300.png": "/portfolio-mdd/static/media/MddProfileNb-300.5044a6c7d357db42aa4d.png",
@@ -14,12 +14,12 @@
     "static/media/6-thumbSocial.jpg": "/portfolio-mdd/static/media/6-thumbSocial.2d925efb6a2c568706b4.jpg",
     "static/media/logo128.png": "/portfolio-mdd/static/media/logo128.166fa8dbdce05497beb3.png",
     "index.html": "/portfolio-mdd/index.html",
-    "main.913f694f.css.map": "/portfolio-mdd/static/css/main.913f694f.css.map",
-    "main.84c5fe29.js.map": "/portfolio-mdd/static/js/main.84c5fe29.js.map",
+    "main.7b38bc2d.css.map": "/portfolio-mdd/static/css/main.7b38bc2d.css.map",
+    "main.2c6cf31f.js.map": "/portfolio-mdd/static/js/main.2c6cf31f.js.map",
     "787.349ee750.chunk.js.map": "/portfolio-mdd/static/js/787.349ee750.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.913f694f.css",
-    "static/js/main.84c5fe29.js"
+    "static/css/main.7b38bc2d.css",
+    "static/js/main.2c6cf31f.js"
   ]
 }
