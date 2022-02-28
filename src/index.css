@@ -88,15 +88,6 @@ p {
   margin-top: 0;
 }
 
-/* a {
-  color: var(--pink);
-  text-decoration: none;
-} */
-/* 
-a:hover {
-  text-decoration: none;
-} */
-
 header {
   background: black;
   display: flex;
