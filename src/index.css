@@ -490,7 +490,7 @@ textarea {
   margin: 2px;
 }
 
-.active {
+.active-link {
   color: var(--ltGreen);
   border: solid var(--ltGreen);
   font-weight: bold;

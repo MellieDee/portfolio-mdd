@@ -11,6 +11,9 @@ function Navbar(props) {
     props.setCurrentPage(page);
   }
 
+
+  // const setHome = to WhatDo on logo click 
+
   // const navActive = (e) => {
   //   let nav = e.target.name;
   //   props.setNavActive(nav)
@@ -23,18 +26,18 @@ function Navbar(props) {
       <nav className="container-nav flex-row">
 
         {/* <nav> */}
-        <a href="https://melliedee.github.io/portfolio-mdd/" className="logo-container">
-          <img src={Logo} alt="M.D. Squared Logo" data-testid="logo" className="logo ripple" href="/" />
+        <a href="/" className="logo-container">
+          <img src={Logo} alt="M.D. Squared Logo" onClick={updatePage} data-testid="logo" className="logo ripple" href="/" />
         </a>
         <ul className="flex-row nav-list" onClick={updatePage}>
-
-          <li className="list - item mx-2" id="about">
+          {/* if currentPage =  props.currentPage */}
+          <li className={`list-item mx-2 ${(props.currentPage === 'about') ? 'active-link' : ''}`} id="about">
             <a data-testid="about" name="about" href="#about" >
               About Me
             </a>
 
           </li>
-          <li className="list-item mx-2" id="featured">
+          <li className={`list-item mx-2 ${(props.currentPage === 'featured') ? 'active-link' : ''}`} id="featured">
             <a data-testid="featured" name="featured" href="#featured">
               Featured Projects
             </a>

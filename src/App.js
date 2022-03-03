@@ -55,6 +55,7 @@ function App() {
       <Navbar
         // setCurrentNav={setCurrentNav}
         setCurrentPage={setCurrentPage}
+        currentPage={currentPage}
       ></Navbar>
 
       <main>
