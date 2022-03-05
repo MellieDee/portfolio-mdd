@@ -1,14 +1,7 @@
 import React from 'react';
 import Hero from '../Hero'
 
-// import coverImage from '../../assets/cover/cover-image.jpg';
-
-
-
 const WhatDo = (props) => {
-
-
-
   return (
     <>
       <Hero></Hero>

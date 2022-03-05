@@ -11,15 +11,6 @@ function Navbar(props) {
     props.setCurrentPage(page);
   }
 
-
-  // const setHome = to WhatDo on logo click 
-
-  // const navActive = (e) => {
-  //   let nav = e.target.name;
-  //   props.setNavActive(nav)
-  // }
-
-
   return (
     <header data-testid="header" className="flex-row px-1">
 
@@ -42,7 +33,7 @@ function Navbar(props) {
               Featured Projects
             </a>
           </li>
-          <li className="list-item mx-2" id="contact">
+          <li className={`list-item mx-2 ${(props.currentPage === 'contact') ? 'active-link' : ''}`} id="contact">
             <a data-testid="contact" name="contact" href="#contact">
               Contact Me
             </a>

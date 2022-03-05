@@ -1,10 +1,6 @@
 import React from 'react';
 
-
-
 const TagLine = () => {
-
-
   return (
     <>
       <section className="my-5 px-3 tag-line">

@@ -10,7 +10,7 @@ function Contact() {
   const [errorMessage, setErrorMessage] = useState('');
   const { name, email, message } = formState;
 
-  // ---------- Handle Change is Sync UI input with internal state of form STARTS ---------
+  // -------- Handle Change Sync UI input with internal state of form STARTS ---------//
 
   // Define the handleChange function --
   // This function syncs internal state of the component formState with the user input from the DOM
@@ -47,7 +47,7 @@ function Contact() {
 
   //console.log(formState) - to confirm syncing wth UI
 
-  // ------------ Handle Change is Sync UI input with internal state of form ENDS ---------
+  // --------- Handle Change Sync UI input with internal state of form ENDS --------- //
 
 
 
@@ -56,7 +56,7 @@ function Contact() {
     e.preventDefault();
     //console.log(formState); - confirm data is captured
   }
-  //would need to add more for BE functionality - this is enuf to transmit data from FE
+  //would need to add more for BE functional - this is enuf to transmit data from FE
   // ----------------------------------- SUBMIT form ENDS ------------------------------
 
 

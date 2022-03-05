@@ -22,12 +22,3 @@ const Hero = () => {
 
 
 export default Hero;
-
-
-
-
-
-
-
-// --------- Future Enhancement -------------- 
-//minify and laer [] of image sizes pick size per media size

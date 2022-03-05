@@ -1,13 +1,9 @@
 import React, { useState } from 'react';
 import iconGh from '../../assets/marks/markGitHub-64.png';
-// import Modal from '../Modal'
 
 
 const ProjectList = () => {
 
-  // const [isModalOpen, setIsModalOpen] = useState(false)
-  // const [currentProject, setCurrentProject] = useState();
-  // const currentCategory = 'featured'
 
   const [projects] = useState([
     {
@@ -107,70 +103,7 @@ const ProjectList = () => {
       ))
       }
     </div >
-
-
-
-    // <div className="card-container">
-    //   {
-    //     projects.map((project, i) => (
-    //       <>
-    //         <div key={project.id} className="card-body">
-
-    //           {/* <a href={project.href} rel="noopener noreferrer" target="_blank"> */}
-
-    //           <div className="card-header">
-    //             <a href={project.href} rel="noopener noreferrer" target="_blank">
-    //               <h3 className="project-title">{project.name} </h3>
-    //             </a>
-    //           </div>
-
-    //           {/* <div className="card-image">
-    //           <a href={project.href} rel="noopener noreferrer" target="_blank">
-    //             <img
-    //               className="img-thumbnail"
-    //               src={require(`../../assets/thumbnails/featured/${project.imgName}.jpg`)}
-    //               alt={project.name}
-    //             />
-    //           </a> */}
-
-    //           <div className="card-image"
-    //             style={{ backgroundImage: `{require(../../ assets/thumbnails/featured/${project.imgName}.jpg`, backgroundSize: `cover`, backgroundPosition: `center center`, backgroundRepeat: `no-repeat` }}>
-    //           </div>
-
-    //           <p>{project.description}</p>
-    //         </div>
-
-    //       </>
-    //     ))
-    //   }
-    // </div >
   )
 }
 
 export default ProjectList;
-
-  // ------------------------ Modal State for Furture --------------------------------
-  // const toggleModal = (image, i) => {
-  //   //current photo (spread op to add index:i k/v pair to current photo state)
-  //   setCurrentProject({ ...image, index: i })
-  //   // when toggleModal function executes, isModalOpen toggles from true to false
-  //   setIsModalOpen(!isModalOpen)
-  // }
-// -------------  JSX to display images--------------
-//   return (
-//     <div>
-//       {isModalOpen && (<Modal currentPhoto={currentProject} onClose={toggleModal} />)}
-//       <div className="flex-row">
-//         {currentProjects.map((image, i) => (
-//           <img
-//             src={require(`../../assets/small/${category}/${i}.jpg`)}
-//             alt={image.name}
-//             className="img-thumbnail mx-1"
-//             onClick={() => toggleModal(image, i)}
-//             key={image.name}
-//           />
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
