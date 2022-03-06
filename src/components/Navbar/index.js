@@ -22,19 +22,19 @@ function Navbar(props) {
         </a>
         <ul className="flex-row nav-list" onClick={updatePage}>
           {/* if currentPage =  props.currentPage */}
-          <li className={`list-item mx-2 ${(props.currentPage === 'about') ? 'active-link' : ''}`} id="about">
-            <a data-testid="about" name="about" href="#about" >
+          <li>
+            <a data-testid="about" className={`list-item mx-2 p-1 br-5 ${(props.currentPage === 'about') ? 'active-link' : ''}`} name="about" href="#about" >
               About Me
             </a>
 
           </li>
-          <li className={`list-item mx-2 ${(props.currentPage === 'featured') ? 'active-link' : ''}`} id="featured">
-            <a data-testid="featured" name="featured" href="#featured">
+          <li>
+            <a data-testid="featured" className={`list-item mx-2 p-1 br-5 ${(props.currentPage === 'featured') ? 'active-link' : ''}`} name="featured" href="#featured">
               Featured Projects
             </a>
           </li>
-          <li className={`list-item mx-2 ${(props.currentPage === 'contact') ? 'active-link' : ''}`} id="contact">
-            <a data-testid="contact" name="contact" href="#contact">
+          <li>
+            <a data-testid="contact" className={`list-item mx-2 p-1 br-5 ${(props.currentPage === 'contact') ? 'active-link' : ''}`} name="contact" href="#contact">
               Contact Me
             </a>
           </li>
