@@ -17,7 +17,7 @@ function Navbar(props) {
       <nav className="container-nav flex-row">
 
         {/* <nav> */}
-        <a href="/" className="logo-container">
+        <a href="/https://melliedee.github.io/portfolio-mdd/" className="logo-container">
           <img src={Logo} alt="M.D. Squared Logo" onClick={updatePage} data-testid="logo" className="logo ripple" href="/" />
         </a>
         <ul className="flex-row nav-list" onClick={updatePage}>

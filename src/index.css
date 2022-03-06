@@ -653,37 +653,7 @@ textarea {
   }
 }
 
-/* ----------- Modal for Future  Starts ----------- */
-/* .modalBackdrop {
-  background: rgba(0, 0, 0, 0.65);
-  bottom: 0;
-  left: 0;
-  overflow: auto;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 1;
-}
-
-.modalContainer {
-  background: var(--darker);
-  border-radius: 5px;
-  max-width: 100%;
-  margin: 50px auto;
-  padding: 15px;
-  width: 960px;
-}
-
-.modalTitle {
-  font-size: 18px;
-  font-weight: 300;
-  margin-bottom: 25px; 
-}*/
-
-/* ----------- Modal for Future Endss ----------- */
-
-/* 
---------- CSS for split -------
+/* -------- CSS for split -------
 .top {
   clip-path: polygon(0 0,100% 0,100% calc(100% - 50px),0 100%);
 }
