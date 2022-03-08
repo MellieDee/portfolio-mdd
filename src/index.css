@@ -260,17 +260,6 @@ nav a:hover {
   color: var(--ltGreen);
 }
 
-nav a:hover {
-  text-decoration: none;
-  color: var(--ltGreen);
-}
-
-/* .nav-list {
-  height: 80px;
-  line-height: 80px;
-  display: inline;
-} */
-
 nav li {
   cursor: pointer;
   /* height: 6.4rem;*/
@@ -451,12 +440,14 @@ textarea {
 }
 
 .project-item a:hover {
-  font-size: 1.1em;
+  font-size: 0.8em;
   color: var(--dkGreen);
+  text-decoration: none;
 }
 
 .project-title {
-  font-size: 1em;
+  font-size: 0.7em;
+  text-decoration: underline;
 }
 
 .project-title:hover {
