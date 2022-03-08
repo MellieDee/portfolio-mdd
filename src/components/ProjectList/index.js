@@ -12,7 +12,7 @@ const ProjectList = () => {
       imgName: '1-thumbWalkNSpot',
       href: 'https://walk-n-spot.herokuapp.com',
       gitHub: 'https://github.com/MellieDee/Walk-n-Spot',
-      description: "To develop an interactive app for hikers to find animals. A way to search trails in your city for animals you want to see, and for those you don't!",
+      description: "An interactive app for hikers to find animals by searching trails in your city for animals you want to see and for those you don't!",
       id: 1
     },
     {
@@ -30,7 +30,7 @@ const ProjectList = () => {
       imgName: '3-thumbDecrypto',
       href: 'https://lssdavies.github.io/deCrypto/',
       gitHub: 'https://github.com/MellieDee/deCrypto',
-      description: 'To develop a responsive website for people new to cryptocurrecy. A source to learn basic details and calculate buying power for a given dollar amount.',
+      description: 'A responsive website for people new to cryptocurrecy. A source to learn basic details and calculate buying power for a given dollar amount.',
       id: 3
     },
 
@@ -40,7 +40,7 @@ const ProjectList = () => {
       imgName: '4-thumbReadMe',
       href: 'https://github.com/MellieDee/readMe-generator',
       gitHub: 'https://github.com/MellieDee/readMe-generator',
-      description: "CLI app to generate a quality README.md which includes a screenshot of the user's app. Not Deployed - checkout the repo!",
+      description: "This CLI app generates a quality README.md which includes a screenshot of the user's app. Not Deployed - checkout the repo!",
       id: 4
     },
     {
@@ -49,7 +49,7 @@ const ProjectList = () => {
       imgName: '5-thumbRegex',
       href: 'https://gist.github.com/MellieDee/28442f71ed65e6caf6fee6280ccff8f2',
       gitHub: 'https://gist.github.com/MellieDee/28442f71ed65e6caf6fee6280ccff8f2',
-      description: 'Intro to a few common Regex concepts by examining the syntax to search for ISO 8601 YYYY/MM/DD dates. Not Deployed - checkout the repo!',
+      description: 'Intro to a few common Regex concepts by examining the syntax to match ISO 8601 YYYY/MM/DD dates. Not Deployed - checkout the repo!',
       id: 5
     },
     {
