@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/portfolio-mdd/static/css/main.b48e830a.css",
-    "main.js": "/portfolio-mdd/static/js/main.d69bdb2f.js",
+    "main.js": "/portfolio-mdd/static/js/main.7d695204.js",
     "static/js/787.349ee750.chunk.js": "/portfolio-mdd/static/js/787.349ee750.chunk.js",
     "static/media/bricks.png": "/portfolio-mdd/static/media/bricks.783d37ca15dbc9329841.png",
     "static/media/MddProfileNb-300.png": "/portfolio-mdd/static/media/MddProfileNb-300.5044a6c7d357db42aa4d.png",
+    "static/media/1-thumbNoshUp.jpg": "/portfolio-mdd/static/media/1-thumbNoshUp.02f1928e338b8be01e21.jpg",
     "static/media/5-thumbRegex.jpg": "/portfolio-mdd/static/media/5-thumbRegex.6872556f69c5e4431ebc.jpg",
     "static/media/dubberleyResume.PDF": "/portfolio-mdd/static/media/dubberleyResume.ad84c4a8a1f5af1a0718.PDF",
-    "static/media/4-thumbReadMe.jpg": "/portfolio-mdd/static/media/4-thumbReadMe.b870ea29f7b31e56146d.jpg",
-    "static/media/2-thumbWeatherDash.jpg": "/portfolio-mdd/static/media/2-thumbWeatherDash.0fdcb3e186aafc70afb7.jpg",
-    "static/media/1-thumbWalkNSpot.jpg": "/portfolio-mdd/static/media/1-thumbWalkNSpot.b47d3a3bb13d5b1726e0.jpg",
-    "static/media/3-thumbDecrypto.jpg": "/portfolio-mdd/static/media/3-thumbDecrypto.07fbb55dd99be44db9d7.jpg",
-    "static/media/6-thumbSocial.jpg": "/portfolio-mdd/static/media/6-thumbSocial.2d925efb6a2c568706b4.jpg",
+    "static/media/6-thumbReadMe.jpg": "/portfolio-mdd/static/media/6-thumbReadMe.b870ea29f7b31e56146d.jpg",
+    "static/media/3-thumbWeatherDash.jpg": "/portfolio-mdd/static/media/3-thumbWeatherDash.0fdcb3e186aafc70afb7.jpg",
+    "static/media/2-thumbWalkNSpot.jpg": "/portfolio-mdd/static/media/2-thumbWalkNSpot.b47d3a3bb13d5b1726e0.jpg",
+    "static/media/4-thumbDecrypto.jpg": "/portfolio-mdd/static/media/4-thumbDecrypto.07fbb55dd99be44db9d7.jpg",
     "static/media/logo128.png": "/portfolio-mdd/static/media/logo128.166fa8dbdce05497beb3.png",
     "index.html": "/portfolio-mdd/index.html",
     "main.b48e830a.css.map": "/portfolio-mdd/static/css/main.b48e830a.css.map",
-    "main.d69bdb2f.js.map": "/portfolio-mdd/static/js/main.d69bdb2f.js.map",
+    "main.7d695204.js.map": "/portfolio-mdd/static/js/main.7d695204.js.map",
     "787.349ee750.chunk.js.map": "/portfolio-mdd/static/js/787.349ee750.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b48e830a.css",
-    "static/js/main.d69bdb2f.js"
+    "static/js/main.7d695204.js"
   ]
 }
