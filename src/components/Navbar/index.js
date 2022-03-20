@@ -4,7 +4,6 @@ import Logo from '../../assets/logos/logo128.png';
 
 function Navbar(props) {
 
-
   const updatePage = (e) => {
     // console.log(e.targets)
     let page = e.target.name;
