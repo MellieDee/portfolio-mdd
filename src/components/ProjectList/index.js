@@ -12,7 +12,7 @@ const ProjectList = () => {
       imgName: '1-thumbNoshUp',
       href: 'http://nosh-up.herokuapp.com',
       gitHub: 'https://github.com/MellieDee/Nosh-Up',
-      description: 'Interactive web app to find new foodie friend and create or search for events by city and cuisine.',
+      description: 'Interactive web app to find new foodie friends and create or search for events by city and cuisine.',
       tech: 'MongoDB, Express, React, Node',
       id: 1
     },
